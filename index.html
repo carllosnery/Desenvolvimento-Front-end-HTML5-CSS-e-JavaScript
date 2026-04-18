@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- Define que o documento é HTML5 -->
+
+<html lang="pt-BR">
+<!-- Define o idioma da página -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Permite acentuação -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Responsividade (mobile) -->
+
+    <title>Login - Sistema de Gestão</title>
+    <!-- Nome da aba -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Importa o CSS externo -->
+</head>
+
+<body>
+
+    <!-- Conteúdo principal da página -->
+    <main class="container">
+
+        <!-- Seção do login -->
+        <section class="login-card">
+
+            <!-- Cabeçalho do login -->
+            <header class="login-header">
+                <h1>Sistema de Gestão</h1>
+                <p>Acesse sua conta para continuar</p>
+            </header>
+
+            <!-- Formulário de login -->
+            <form id="formLogin" novalidate>
+                <!-- novalidate desativa validação padrão do navegador -->
+
+                <!-- Campo de e-mail -->
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+
+                    <input type="text" id="email" placeholder="Digite seu e-mail">
+                    <!-- Campo de entrada do usuário -->
+
+                    <small id="erroEmail" class="mensagem erro"></small>
+                    <!-- Local onde aparece erro do e-mail -->
+                </div>
+
+                <!-- Campo de senha -->
+                <div class="input-group">
+                    <label for="senha">Senha</label>
+
+                    <input type="password" id="senha" placeholder="Digite sua senha">
+                    <!-- Campo com ocultação de caracteres -->
+
+                    <small id="erroSenha" class="mensagem erro"></small>
+                    <!-- Local do erro da senha -->
+                </div>
+
+                <!-- Botão de envio -->
+                <button type="submit" id="btnEntrar">Entrar</button>
+
+                <!-- Mensagem de sucesso -->
+                <p id="mensagemSucesso" class="mensagem sucesso"></p>
+
+            </form>
+        </section>
+    </main>
+
+    <!-- Importa o JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

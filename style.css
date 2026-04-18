@@ -1,0 +1,143 @@
+/* Reset padrão (remove estilos automáticos do navegador) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização do corpo da página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Centralização com Flexbox */
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center;     /* vertical */
+
+    min-height: 100vh; /* ocupa tela toda */
+
+    /* Fundo com degradê */
+    background: linear-gradient(135deg, #0f172a, #1e3a8a, #2563eb);
+}
+
+/* Container principal */
+.container {
+    width: 100%;
+    max-width: 420px; /* limita largura */
+}
+
+/* Caixa do login */
+.login-card {
+    background: white;
+
+    padding: 35px; /* espaço interno */
+
+    border-radius: 15px; /* cantos arredondados */
+
+    /* Sombra (Box Model) */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Cabeçalho */
+.login-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.login-header h1 {
+    font-size: 26px;
+    color: #1e293b;
+}
+
+.login-header p {
+    color: #64748b;
+}
+
+/* Formulário em coluna */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Grupo de inputs */
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label */
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Input */
+input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    /* Animação suave */
+    transition: 0.3s;
+}
+
+/* Efeito ao clicar no input */
+input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+/* Botão */
+button {
+    padding: 12px;
+
+    border: none;
+    border-radius: 8px;
+
+    color: white;
+    font-weight: bold;
+
+    /* Degradê */
+    background: linear-gradient(90deg, #2563eb, #1d4ed8);
+
+    cursor: pointer;
+
+    /* Animação */
+    transition: 0.2s;
+
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+/* Hover (passar o mouse) */
+button:hover {
+    transform: translateY(-2px);
+}
+
+/* Clique */
+button:active {
+    transform: scale(0.97);
+}
+
+/* Estado de carregamento */
+button.loading {
+    opacity: 0.7;
+    pointer-events: none; /* bloqueia clique */
+}
+
+/* Mensagens */
+.mensagem {
+    font-size: 13px;
+}
+
+/* Erro */
+.erro {
+    color: red;
+}
+
+/* Sucesso */
+.sucesso {
+    color: green;
+    text-align: center;
+    margin-top: 10px;
+}
